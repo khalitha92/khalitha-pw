@@ -1,0 +1,21 @@
+﻿{
+    "files.watcherExclude": {
+        "**/.git/**": true,
+        "**/node_modules/**": true,
+        "**/playwright-report/**": true,
+        "**/test-results/**": true
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/playwright-report": true,
+        "**/test-results": true
+    },
+    "search.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/playwright-report": true,
+        "**/test-results": true
+    },
+    "typescript.disableAutomaticTypeAcquisition": true
+}

@@ -84,7 +84,7 @@ test('Runtime Slow Example', async ({ page }) => {
 
 //test.only():
 
-test.only('Only Example - Using test.only()', async ({ page }) => {
+test('Only Example - Using test.only()', async ({ page }) => {
     await page.goto(URL);
     await expect(page).toHaveTitle(/Playwright/);
 });

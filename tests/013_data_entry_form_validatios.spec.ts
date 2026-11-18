@@ -76,12 +76,12 @@ test.describe('Data Entry Form Validation', () => {
   })
 
   //4. Checkboxes validation
-  test.only('4. Checkboxes validation', async ({ page }) => {
+  test('4. Checkboxes validation', async ({ page }) => {
     
     // Select Sunday
 	  const sundayCheckbox = page.getByLabel('Sun');
     await sundayCheckbox.check() // check checkbox
-    sundayCheckbox.setChecked(true)  //sundayCheckbox.setChecked(false)  true- check  false - uncheck
+    //await sundayCheckbox.setChecked(true)  //sundayCheckbox.setChecked(false)  true- check  false - uncheck
 
     //Select all checkboxes (Mon–Sun)
 
@@ -95,7 +95,7 @@ test.describe('Data Entry Form Validation', () => {
 
   
    for(const checkbox of allCheckboxes){
-      await checkbox.check()
+       await checkbox.setChecked(true);
       await expect(checkbox).toBeChecked()  // assertion
     }
 

@@ -22,9 +22,17 @@ const records=parse(fileContent,
                     )
 
 //main test
+interface LoginData {
+    email: string;
+    password: string;
+    validity: string;
+}
+
+// records = your CSV data
+const loginRecords = records as LoginData[];
 test.describe('Login data driven test', async()=> {
 
-    for (const data of records) {
+    for (const data of loginRecords) {
             test(`Login test with email: "${data.email}" and password: "${data.password}"`, async ({ page }) => {
                 await page.goto('https://demowebshop.tricentis.com/login');
 

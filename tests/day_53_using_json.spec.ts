@@ -1,5 +1,5 @@
 import {test,expect}  from '@playwright/test'
-import custproduct from '..//testdata/custproduct1.json'
+import custproduct from '..//testdata/custproduct1.json' with { type: 'json' };
 import fs from 'fs'
 let product = {
     "productName" : "Sauce Labs Backpack",

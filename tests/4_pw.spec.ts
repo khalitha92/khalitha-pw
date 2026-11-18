@@ -12,4 +12,6 @@ test("Page navigation and information methods", async ({ page }) => {
 await expect(countryDropdown).toHaveValue("Afghanistan");
 
 
+
+
 });
